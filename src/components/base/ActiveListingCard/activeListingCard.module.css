@@ -1,0 +1,57 @@
+.activeListingCard {
+  cursor: pointer;
+}
+
+.box {
+  display: grid;
+  gap: 16px;
+  position: relative;
+  transition: transform 0.1s ease;
+  width: 100%;
+  aspect-ratio: 1;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.box:hover {
+  transform: scale(0.98);
+}
+
+.box img:hover {
+  box-shadow: 2px 2px black;
+  transform: translate(-2px, -2px);
+}
+.boxTitle {
+  background-color: white;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 10px;
+  justify-self: start;
+  align-self: start;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.box img {
+  grid-column: 1;
+  grid-row: 1;
+  object-fit: cover;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 2px solid var(--black);
+}
+
+.item {
+  display: block;
+  padding-top: 7px;
+}
+.itemPriceStock {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

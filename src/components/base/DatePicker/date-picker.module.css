@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.input {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  border: 2px var(--black) solid;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: var(--white);
+}

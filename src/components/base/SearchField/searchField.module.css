@@ -1,0 +1,32 @@
+.inputContainer {
+  background: var(--white);
+  border: 2px solid var(--black);
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 6px 11px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  border: 0;
+  margin: 0 10px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border: none;
+}
+
+.input::placeholder {
+  color: var(--light-gray);
+}
+
+.searchReset {
+  cursor: pointer;
+}

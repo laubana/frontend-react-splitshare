@@ -1,0 +1,11 @@
+.checkbox_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}

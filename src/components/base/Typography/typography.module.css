@@ -1,0 +1,111 @@
+/* Typography */
+
+.h1-graphik-bold {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.h2-graphik-bold {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.h3-graphik-bold {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.h4-graphik-bold {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-1-medium {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-2-regular {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-3-medium {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.body-4-regular {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button-regular {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-semibold {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.black {
+  color: var(--black);
+}
+.white {
+  color: var(--white);
+}
+.gray {
+  color: var(--gray);
+}
+.light-gray {
+  color: var(--light-gray);
+}
+.dark-blue {
+  color: var(--dark-blue);
+}
+.light-blue {
+  color: var(--light-blue);
+}
+.yellow {
+  color: var(--yellow);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.error {
+  color: var(--error);
+}

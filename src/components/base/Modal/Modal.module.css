@@ -1,0 +1,41 @@
+.outer-background {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px var(--black);
+  display: grid;
+  gap: 20px;
+  width: 75vw;
+  max-width: 500px;
+}
+
+.inner-background {
+  background-color: var(--white);
+}
+
+.btn-wrapper {
+  text-align: right;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-height: 75vh;
+  overflow: auto;
+}

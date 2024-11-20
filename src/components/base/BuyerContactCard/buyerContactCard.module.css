@@ -1,0 +1,54 @@
+
+
+.buyer-contact-card {
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  gap: 1rem;
+  box-shadow: 2px 2px black;
+  padding: 16px 16px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.buyer-contact-details {
+  display: flex;
+  align-items: center;
+}
+
+.buyer-contact-description {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.buyer-contact-card .image-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 500px;
+  justify-items: center;
+  align-items: center;
+  /* display: flex; */
+  margin-right: 0.5rem;
+}
+
+.buyer-contact-card .image-container img {
+  border-radius: 500px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+  .buyer-contact-card {
+    height: 100%;
+    padding: 16px 16px 20px;
+  }
+}

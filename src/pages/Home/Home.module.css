@@ -1,0 +1,122 @@
+/* .resultsWrapper {
+  border-top: 1px solid var(--black);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 28px 16px;
+} */
+
+.title {
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.location {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Desktop 1200px */
+.desktopListing {
+  /* grid-column: span 3; */
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px var(--black);
+  background-color: var(--white);
+  /* position: relative; */
+  /* padding: 28px 36px 0 36px; */
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktopListing > div:last-of-type::-webkit-scrollbar {
+  width: 0;
+}
+
+/* .resultContainer {
+  overflow: auto;
+  scrollbar-width: thin;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+} */
+
+/* .resultContainer::-webkit-scrollbar {
+  background: transparent;
+} */
+
+/* .mapDesktop {
+  grid-column: 4/-1;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px var(--black);
+  height: 650px;
+} */
+
+.desktopWrapper {
+  padding: 60px calc(60px + ((100vw - 768px) / 672) * 100);
+}
+
+/* @media (max-width: 769px) {
+  .desktopWrapper {
+    padding: 60px;
+  }
+} */
+
+/* .container {
+  position: relative;
+} */
+
+/* .displayButton {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+} */
+
+/* .open {
+  // Adjust the height according to your content
+  display: block;
+  background-color: hotpink;
+} */
+
+/* .drawer-content {
+  padding: 16px;
+} */
+
+/* .mobileWrapper {
+  position: relative;
+} */
+
+.mobileListing {
+  padding: 20px 16px;
+  background-color: var(--white);
+  margin-bottom: 20%;
+}
+
+@media screen and (min-width: 576px) {
+  .mobileListing {
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+/* .mobileResults {
+  overflow: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(max(150px, calc((100%) / 3)), 1fr)
+  );
+  justify-content: center;
+  justify-items: center;
+} */

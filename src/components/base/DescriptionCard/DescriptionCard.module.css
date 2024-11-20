@@ -1,0 +1,11 @@
+.wrapper {
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid var(--black);
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  align-content: space-between;
+  justify-content: stretch;
+  gap: 12px;
+}

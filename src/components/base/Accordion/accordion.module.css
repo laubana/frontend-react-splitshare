@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  background-color: var(--white);
+  transition: max-height 0.5s;
+}
+
+.header {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footer {
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s ease-in-out;
+}
+
+.expand {
+  max-height: 1000px;
+  transition: all 0.35s ease-in-out;
+}

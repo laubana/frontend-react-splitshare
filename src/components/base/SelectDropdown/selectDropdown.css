@@ -1,0 +1,25 @@
+.react-dropdown-select {
+  z-index: 60;
+}
+
+.react-dropdown-select-dropdown {
+  border-radius: 10px !important;
+}
+.react-dropdown-select-item:hover {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
+}
+
+.react-dropdown-select-item.react-dropdown-select-item-selected,
+.react-dropdown-select-item.react-dropdown-select-item-active {
+  background: var(--light-blue) !important;
+  color: var(--black) !important;
+}
+
+.react-dropdown-select-item {
+  padding: 12px 20px !important;
+}
+
+.react-dropdown-select-input {
+  font-size: 16px !important;
+}

@@ -1,0 +1,33 @@
+.ordertabs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ordertabs li {
+  list-style-type: none;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+.ordertabs li div {
+  color: var(--light-gray);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ordertabs .active div {
+  color: var(--dark-blue);
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--yellow);
+}
+
+@media screen and (min-width: 1440px) {
+  .ordertabs {
+    justify-content: right;
+    gap: 8px;
+  }
+}

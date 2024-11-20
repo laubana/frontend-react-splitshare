@@ -1,0 +1,19 @@
+button {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: white;
+  padding: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00000010;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  background-color: #00000010;
+}

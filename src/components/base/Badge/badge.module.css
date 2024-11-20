@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: var(--white);
+  padding: 4px 16px;
+  border: 1px solid var(--black);
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  background-color: var(--black);
+}
+
+.wrapper div:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.selected {
+  background-color: var(--light-blue);
+  color: var(--black);
+}

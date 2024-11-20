@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 16px 16px 125px 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.btn {
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+.wrapper {
+  padding: 60px calc(60px + ((100vw - 768px) / 672) * 100);
+
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 992px;
+    margin: auto;
+  }
+}

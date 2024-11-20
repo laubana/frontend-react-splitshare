@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.image,
+.input {
+  border-radius: 50%;
+  box-sizing: border-box;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.input {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: stretch;
+  background-color: #ccc;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+  color: #fff;
+}
+
+.icon {
+  box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+.meet-up-info-card {
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 0.1fr 2fr;
+}
+
+.meet-up-info-card .title-container {
+  margin-bottom: 8px;
+}
+
+.title-container {
+  grid-column: 1/-1;
+}
+
+.map-container {
+  box-sizing: border-box;
+  margin-top: 16px;
+  min-height: 360px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  grid-column: 1/-1;
+}
+
+@media screen and (min-width: 1440px) {
+  .meet-up-info-card {
+    padding: 16px;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  .time-container,
+  .date-container,
+  .location-container {
+    grid-template-columns: 0.1fr 1.7fr;
+  }
+}

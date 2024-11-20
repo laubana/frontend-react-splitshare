@@ -1,0 +1,58 @@
+.loginWrapper {
+  background-color: var(--dark-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(30%);
+}
+
+.formikContainer {
+  display: flex;
+  margin-top: 28px;
+}
+
+.formikContainer form {
+  background-color: var(--white);
+  padding: 24px 19px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bottom {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.svg {
+  padding: 5px;
+  border-radius: 100px;
+  box-shadow: 3px 3px 0px var(--black);
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  padding: 8px 8px 4px 8px;
+}
+
+.createAcct {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leftIcons {
+  padding-top: 5rem;
+}

@@ -1,0 +1,33 @@
+.filterWrapper {
+  background-color: var(--dark-blue);
+  padding: 32px 16px;
+  border-bottom: 2px solid var(--black);
+}
+
+.badgeContainer,
+.mapContainer,
+.selectContainer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.badgeContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.filterWrapperFlex {
+  display: flex;
+  background-color: var(--dark-blue);
+  padding: 32px 16px;
+  border-bottom: 2px solid var(--black);
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 770px) {
+.filterWrapper {
+  padding: 24px calc(-54.28571px + 14.88095vw);
+}
+}

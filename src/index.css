@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Graphik";
+  font-weight: 700;
+  src: local("GraphikBold"), url("./fonts/GraphikBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 500;
+  src: local("GraphikMedium"), url("./fonts/GraphikMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  src: local("GraphikNormal"), url("./fonts/GraphikRegular.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Graphik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Graphik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: "Graphik", sans-serif;
+}

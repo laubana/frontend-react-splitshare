@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.btn {
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 12px;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.inactive {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.inactive:hover {
+  background-color: var(--light-gray);
+  color: black;
+}
+
+.active {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px var(--black);
+}
+
+.previous,
+.next {
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  box-shadow: none;
+}
+
+.previous:hover,
+.next:hover {
+  text-decoration: underline;
+}

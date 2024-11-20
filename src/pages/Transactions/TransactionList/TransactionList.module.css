@@ -1,0 +1,75 @@
+.ordersList {
+  padding: 16px;
+  padding-bottom: 125px;
+}
+
+.titleWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  box-sizing: border-box;
+  row-gap: 12px;
+  padding: 20px 24px;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.titleWrapper > div:nth-child(2) > div > div {
+  min-width: 120px !important;
+  z-index: 1 !important;
+}
+
+.titleWrapper ul {
+  grid-column: 1 / -1;
+}
+
+.ordersList > :nth-child(2) {
+  padding-top: 16px;
+}
+.ordersList > :nth-child(2) > div {
+  box-sizing: border-box;
+}
+
+.orders .transactionCard {
+  margin: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .ordersList {
+    margin: 32px 64px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ordersList {
+    margin: 0;
+    padding: 60px calc(60px + ((100vw - 768px) / 672) * 100);
+  }
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    gap: 16px;
+  }
+
+  .titleWrapper div {
+    flex-basis: 10%;
+  }
+
+  .titleWrapper select {
+    flex-basis: 20%;
+  }
+
+  .titleWrapper ul {
+    flex-basis: 70%;
+    align-items: center;
+    justify-content: end;
+  }
+}
