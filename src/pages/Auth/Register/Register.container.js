@@ -35,12 +35,11 @@ const Register = () => {
     email: Yup.string()
       .email("Invalid email format")
       .required("Your email is required"),
-    password: Yup.string()
-      .min(6, "Your password must be at least 6 characters")
-      .required("Your password is required"),
-    confirmPassword: Yup.string()
-      .min(6, "Your password must be at least 6 characters")
-      .oneOf([Yup.ref("password"), null], "Your password does not match"),
+    password: Yup.string().required("Your password is required"),
+    confirmPassword: Yup.string().oneOf(
+      [Yup.ref("password"), null],
+      "Your password does not match"
+    ),
     firstName: Yup.string().required("Your First Name is required"),
     lastName: Yup.string().required("Your Last Name is required"),
     contactNumber: Yup.string().required("Your contact is required"),

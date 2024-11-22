@@ -1,0 +1,23 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: frontend-react-splitshare-dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    restart: always
+
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: frontend-react-splitshare-prod
+    ports:
+      - 3000:80
+    volumes:
+      - /app/node_modules
+    restart: always

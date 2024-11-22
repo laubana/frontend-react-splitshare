@@ -39,7 +39,6 @@ const AddListing = (props) => {
     handleOnSubmit,
     handleOnBlur,
     navigate,
-    latLong,
   } = props;
 
   const isDesktop = useMediaQuery("(min-width: 1000px)");
@@ -338,7 +337,7 @@ const AddListing = (props) => {
                         Meet-up Location
                       </Typography>
                       <div className={styles.sectionGap}>
-                        {/* <MapSearch bottom resetAddressInfo={() => null} /> */}
+                        <MapSearch bottom resetAddressInfo={() => null} />
                       </div>
                       <div className={styles.meetUpMap}>
                         {placeValue ? (
@@ -348,8 +347,8 @@ const AddListing = (props) => {
                               {
                                 id: 1,
                                 location: {
-                                  latitude: latLong[0],
-                                  longitude: latLong[1],
+                                  latitude: placeValue.geometry.location.lat(),
+                                  longitude: placeValue.geometry.location.lng(),
                                 },
                               },
                             ]}
@@ -357,7 +356,12 @@ const AddListing = (props) => {
                             height="100%"
                             borderRadius="20px"
                             zIndex={2}
-                            bounds={[[latLong[0], latLong[1]]]}
+                            bounds={[
+                              [
+                                placeValue.geometry.location.lat(),
+                                placeValue.geometry.location.lng(),
+                              ],
+                            ]}
                             showActiveListing={false}
                           />
                         ) : (
@@ -694,7 +698,7 @@ const AddListing = (props) => {
                         Meet-up Location
                       </Typography>
                       <div className={styles.sectionGap}>
-                        {/* <MapSearch bottom resetAddressInfo={() => null} /> */}
+                        <MapSearch bottom resetAddressInfo={() => null} />
                       </div>
                       <div className={styles.meetUpMap}>
                         {placeValue ? (
@@ -704,8 +708,8 @@ const AddListing = (props) => {
                               {
                                 id: 1,
                                 location: {
-                                  latitude: latLong[0],
-                                  longitude: latLong[1],
+                                  latitude: placeValue.geometry.location.lat(),
+                                  longitude: placeValue.geometry.location.lng(),
                                 },
                               },
                             ]}
@@ -713,7 +717,12 @@ const AddListing = (props) => {
                             height="100%"
                             borderRadius="20px"
                             zIndex={2}
-                            bounds={[[latLong[0], latLong[1]]]}
+                            bounds={[
+                              [
+                                placeValue.geometry.location.lat(),
+                                placeValue.geometry.location.lng(),
+                              ],
+                            ]}
                             showActiveListing={false}
                           />
                         ) : (

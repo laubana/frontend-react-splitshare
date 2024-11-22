@@ -66,8 +66,6 @@ const AddListing = () => {
   const [portionPrice, setPortionPrice] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const navigate = useNavigate();
-  const latLong = [49.225693, -123.107326];
-  const langaraAddress = "100 W 49th Ave, Vancouver, BC V5Y 2Z6";
 
   const initialValues = {
     itemName: "",
@@ -85,7 +83,7 @@ const AddListing = () => {
   });
 
   useEffect(() => {
-    updatePlaceValue(true);
+    updatePlaceValue("");
   }, []);
 
   useEffect(() => {
@@ -149,21 +147,15 @@ const AddListing = () => {
           images: [
             "https://firebasestorage.googleapis.com/v0/b/splitshare-67496.appspot.com/o/system-image%2Fno-image.jpg?alt=media&token=3f828f90-b19c-42a7-a458-7a8dabca0870",
           ],
-          lat: latLong[0],
-          latitude: latLong[0],
-          location: new GeoPoint(latLong[0], latLong[1]),
-          long: latLong[1],
-          longitude: latLong[1],
-          meetUpAddress: langaraAddress,
-          // lat: placeValue.geometry.location.lat(),
-          // latitude: placeValue.geometry.location.lat(),
-          // location: new GeoPoint(
-          //   placeValue.geometry.location.lat(),
-          //   placeValue.geometry.location.lng()
-          // ),
-          // long: placeValue.geometry.location.lng(),
-          // longitude: placeValue.geometry.location.lng(),
-          // meetUpAddress: placeValue.formatted_address,
+          lat: placeValue.geometry.location.lat(),
+          latitude: placeValue.geometry.location.lat(),
+          location: new GeoPoint(
+            placeValue.geometry.location.lat(),
+            placeValue.geometry.location.lng()
+          ),
+          long: placeValue.geometry.location.lng(),
+          longitude: placeValue.geometry.location.lng(),
+          meetUpAddress: placeValue.formatted_address,
           meetUpInfo: new Date(year, month - 1, day, hours, minutes),
           name: itemName,
           price: Number(portionPrice),
@@ -235,7 +227,6 @@ const AddListing = () => {
     handleOnSubmit,
     handleOnBlur,
     navigate,
-    latLong,
   };
   return <AddListingView {...generatedProps} />;
 };

@@ -1,8 +1,9 @@
-import React, { Suspense } from "react";
+import React, { useState, Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import loadable from "@loadable/component";
 import Layout from "./components/layout/Layout/Layout";
 import ProtectedRoute from "./components/layout/ProtectedRoute/ProtectedRoute";
+import TestComponents from "./TestingComponents/TestComponents";
 import "./utils/variable.css";
 
 // Lazy loading and suspense
@@ -90,6 +91,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="testComponent" element={<TestComponents />} />
 
           {/* Catch all - replace with 404 Not Found page if preferred */}
           {/* Catch all - replace with 404 Not Found page if preferred */}

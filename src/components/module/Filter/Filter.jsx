@@ -51,14 +51,22 @@ const Filter = ({
           />
         </div>
       </div>
-      {/* <div>
+      <div>
         <Typography color="white" variant="h4-graphik-bold">
           Location
         </Typography>
         <div className={style.mapContainer}>
           <MapSearch height="36px" bottom resetAddressInfo={() => null} />
+          {/* <SelectDropdown
+            options={options}
+            placeholder={placeholder}
+            clearable
+            backspaceDelete
+            onChange={onChange}
+            searchable={false}
+          /> */}
         </div>
-      </div> */}
+      </div>
       <div>
         <Typography color="white" variant="h4-graphik-bold">
           Category
